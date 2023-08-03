@@ -10,7 +10,16 @@ import javax.swing.JOptionPane;
  *
  * @author fabar
  */
-public class Proyecto_Clinica_Grupo6 {
+
+
+public class Clinica {
+
+    // Array que contiene hasta 5 médicos registrados en la clínica
+    private Medico[] medicos = new Medico[5];
+    
+    // Matriz que representa la agenda de citas de cada médico
+    // Cada médico puede tener hasta 10 citas al día
+    private Cita[][] agenda = new Cita[5][10];
 
     public static void main(String[] args) {
         
