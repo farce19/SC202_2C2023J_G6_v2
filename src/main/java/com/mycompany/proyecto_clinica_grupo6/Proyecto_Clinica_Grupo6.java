@@ -4,6 +4,8 @@
 
 package com.mycompany.proyecto_clinica_grupo6;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author fabar
@@ -11,6 +13,18 @@ package com.mycompany.proyecto_clinica_grupo6;
 public class Proyecto_Clinica_Grupo6 {
 
     public static void main(String[] args) {
-        System.out.println("Hola Equipo grupo 6, prueba 01");
-    }
+        
+        Proyecto_Clinica_Grupo6 Proyecto_Clinica_Grupo6 = new Proyecto_Clinica_Grupo6();
+        boolean continuar = true;
+
+        // Muestra un menú repetidamente hasta que el usuario decida salir
+        while (continuar) {
+            String option = JOptionPane.showInputDialog("Seleccione una opción: \n1. Registrar Médico \n2. Agendar Cita \n3. Cancelar Cita \n4. Revisar Agenda \n5. Salir");
+            
+            //falta un case con las opciones, aun no funcional del todo 
+    
+            JOptionPane.showInputDialog("Cambio para prueba del Git");
+    
+        }
+   }
 }
