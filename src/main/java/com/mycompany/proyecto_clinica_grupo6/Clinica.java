@@ -37,10 +37,35 @@ public class Clinica {
         while (continuar) {
             String option = JOptionPane.showInputDialog("Seleccione una opción: \n1. Registrar Médico \n2. Agendar Cita \n3. Cancelar Cita \n4. Revisar Agenda \n5. Salir");
             
-            //falta un case con las opciones, aun no funcional del todo 
-    
-            JOptionPane.showInputDialog("Cambio para prueba del Git");
-    
+            // Muestra un menú repetidamente hasta que el usuario decida salir
+            while (continuar) {
+                // El switch esta presentando algunos error a corregir (Encargado Marco)
+                
+               //String option = JOptionPane.showInputDialog("Seleccione una opción: \n1. Registrar Médico \n2. Agendar Cita \n3. Cancelar Cita \n4. Revisar Agenda \n5. Salir");
+            
+                //switch (option) {
+                //    case "1":
+                //        Clinica.RegistrarMedico();
+                //        break;
+                //    case "2":
+                //        Clinica.AgendarCita();
+                //        break;
+                //    case "3":
+                //        Clinica.CancelarCita();
+                //        break;
+                //    case "4":
+                //        Clinica.RevisarAgenda();
+                //        break;
+                //    case "5":
+                //        continuar = false;
+                //        JOptionPane.showMessageDialog(null, "Adiós!");
+                //        break;
+                //    default:
+                    // Si la opción ingresada no es válida, muestra un mensaje de error
+                //     JOptionPane.showMessageDialog(null, "Opción no válida. Intente de nuevo.");
+                //        break;
+            }
+   
         }
-   }
-}
+    }        
+} 
