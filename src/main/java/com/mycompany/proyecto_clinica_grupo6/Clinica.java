@@ -1,16 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.mycompany.proyecto_clinica_grupo6;
 
 import javax.swing.JOptionPane;
-
-/**
- *
- * @author fabar
- */
-
 
 public class Clinica {
 
