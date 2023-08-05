@@ -21,7 +21,19 @@ public class Clinica {
     // Cada médico puede tener hasta 10 citas al día
     private Cita[][] agenda = new Cita[5][10];
     
-    
+    // Método para registrar un nuevo médico en la clínica
+    public void registrarMedico() {
+    // Sulicitud de datos del medico
+    String nombre = JOptionPane.showInputDialog("Ingrese el nombre del médico:");
+    String especialidad = JOptionPane.showInputDialog("Ingrese la especialidad del médico:");
+    int horaAlmuerzo = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la hora de almuerzo del médico (8-17, formato 24 horas):"));
+
+    // Verificación de validez de hora de almuerzo
+    if (horaAlmuerzo < 8 || horaAlmuerzo > 17) {
+        JOptionPane.showMessageDialog(null, "Hora de almuerzo inválida.");
+        return;
+    }
+    }
     
     //---------------------------------------------------------------------------------------
     
