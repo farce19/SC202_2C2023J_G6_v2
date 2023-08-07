@@ -13,3 +13,15 @@ class Medico {
     private int horaAlmuerzo;
     
 }   
+    //Parte 2 Eyker con error falta terminar
+   public Medico(String nombre, String especialidad, int horaAlmuerzo) {
+        this.nombre = nombre;
+        this.especialidad = especialidad;
+        this.horaAlmuerzo = horaAlmuerzo;
+    }
+    // Esto es para obtener y modificar los datos del médico.
+
+    //Este es un método que devuelve el nombre del médico.
+    public String getNombre() {
+        return nombre;
+    }s
