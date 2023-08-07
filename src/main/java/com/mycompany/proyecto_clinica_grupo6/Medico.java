@@ -4,10 +4,12 @@
  */
 package com.mycompany.proyecto_clinica_grupo6;
 
-/**
- *
- * @author fabar
- */
+
 class Medico {
+
+    //Declaracion de atributos clase medico
+    private String nombre;
+    private String especialidad;
+    private int horaAlmuerzo;
     
-}
+}   
