@@ -6,7 +6,7 @@ package com.mycompany.proyecto_clinica_grupo6;
 
 
 class Medico {
-
+    //Parte Eyker
     //Declaracion de atributos clase medico
     private String nombre;
     private String especialidad;
