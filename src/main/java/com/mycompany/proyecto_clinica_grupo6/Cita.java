@@ -17,4 +17,11 @@ public class Cita {
     private int duracion;
     private double costo;
     private Medico medico;
-}
+    
+     // Constructor: es una función especial que nos permite crear o inicializar un objeto de tipo Cita con datos específicos.
+    public Cita(String cliente, String telefono, String servicio, Medico medico) {
+        this.cliente = cliente;
+        this.telefono = telefono;
+        this.servicio = servicio;
+        this.medico = medico;
+ }
