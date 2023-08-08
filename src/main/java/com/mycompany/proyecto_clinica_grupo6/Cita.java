@@ -6,7 +6,7 @@ package com.mycompany.proyecto_clinica_grupo6;
 
 /**
  *
- * @author fabar
+ *
  */
 class Cita {
     
@@ -24,4 +24,5 @@ class Cita {
         this.telefono = telefono;
         this.servicio = servicio;
         this.medico = medico;
+   }
     }
