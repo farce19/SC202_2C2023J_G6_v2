@@ -6,11 +6,7 @@ package com.mycompany.proyecto_clinica_grupo6;
 
 /**
  *
-<<<<<<< HEAD
- * 
-=======
  *
->>>>>>> eeae085d56407f3f1abf276cae34ad45ba29065b
  */
 public class Cita {
 
