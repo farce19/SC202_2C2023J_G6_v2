@@ -34,6 +34,17 @@ class Cita {
         duracion = 30; // Duración en minutos
         costo = 50.0;  // Costo en dólares (por ejemplo)
         break;
-    }
+    case "Cirugía Ambulatoria":
+        duracion = 120;
+        costo = 200.0;
+        break;
+    case "Cirugía Especializada":
+        duracion = 240;
+        costo = 500.0;
+        break;
+}
+
+        // Se añade un impuesto del 13% al costo original.
+        costo += costo * 0.13;
     }
 }
