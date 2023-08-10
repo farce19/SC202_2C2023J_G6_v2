@@ -25,4 +25,15 @@ class Cita {
         this.servicio = servicio;
         this.medico = medico;
    }
+    // Forma privada que dice la duración y costo de la cita basándose en el tipo de servicio.
+    private void calcularDuracionYCosto() {
+        // Dependiendo del servicio, se asigna un valor a la duración y al costo.
+        switch (servicio) {
+            //Se definen los diferentes servicios y su respectiva duración y costo.
+    case "Medicina General":
+        duracion = 30; // Duración en minutos
+        costo = 50.0;  // Costo en dólares (por ejemplo)
+        break;
     }
+    }
+}
