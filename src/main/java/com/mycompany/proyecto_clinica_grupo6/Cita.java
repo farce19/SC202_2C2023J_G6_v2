@@ -47,4 +47,36 @@ class Cita {
         // Se añade un impuesto del 13% al costo original.
         costo += costo * 0.13;
     }
+    // Después, tenemos métodos que permiten obtener o cambiar los datos de una cita.
+    //Son como "ventanas" para ver o modificar la información.
+
+    // Devuelve el nombre del cliente de la cita.
+    public String getCliente() {
+        return cliente;
+    }
+
+    // Permite cambiar el nombre del cliente de la cita.
+    public void setCliente(String cliente) {
+        this.cliente = cliente;
+    }
+
+    // Devuelve el teléfono asociado a la cita.
+    public String getTelefono() {
+        return telefono;
+    }
+
+    // Permite cambiar el teléfono asociado a la cita.
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    // Devuelve el tipo de servicio de la cita.
+    public String getServicio() {
+        return servicio;
+    }
+
+    // Permite cambiar el tipo de servicio de la cita.
+    public void setServicio(String servicio) {
+        this.servicio = servicio;
+    }
 }
