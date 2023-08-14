@@ -27,7 +27,34 @@ public class Clinica {
     
     //---------------------------------------------------------------------------------------
     
+    public void cancelarCita() {
+    //usuario ingresará información de la cita que quiere cancelar
+    String cliente = JOptionPane.showInputDialog("Ingrese el nombre del cliente para cancelar:");
+    int indexMedico = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el médico que lo iba a atender (0-4):"));
+    int hora = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la hora de la cita (8-17, formato 24 horas):")) - 8;
+
+    //Espacio de consulta de nedico y la hora del mismo
+    if (indexMedico < 0 || indexMedico >= medicos.length || hora < 0 || hora >= 10) {
+        JOptionPane.showMessageDialog(null, "Datos inválidos.");
+        return;
+    }
+
+    // consulta si la cita existe y pertenece al cliente
+    if (agenda[indexMedico][hora] != null && agenda[indexMedico][hora].getCliente().equals(cliente)) {
+        agenda[indexMedico][hora] = null;
+        JOptionPane.showMessageDialog(null, "Cita cancelada con éxito.");
+    } else {
+        // Si no se encuentra la cita, mostrará error
+        JOptionPane.showMessageDialog(null, "No se encontró la cita.");
+    }
+}
     
+    /*
+    *
+    * En este espacio se desarrollara la partede consulta de agenda
+    * Encargado Marco
+    *
+    */
     
 
     public static void main(String[] args) {
@@ -42,7 +69,7 @@ public class Clinica {
                 //Se llaman funciones de la clase cita, solo se debe esperar a que se carguen a la main por el encargado
                 switch (option) {
                     case "1":
-                        Clinica.RegistrarMedico();
+                       Clinica.RegistrarMedico();
                        break;
                     case "2":
                         Clinica.AgendarCita();

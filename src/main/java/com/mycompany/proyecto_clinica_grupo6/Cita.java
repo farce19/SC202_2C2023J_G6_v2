@@ -25,3 +25,8 @@ class Cita {
         this.servicio = servicio;
         this.medico = medico;
     }
+
+    Object getCliente() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+}
