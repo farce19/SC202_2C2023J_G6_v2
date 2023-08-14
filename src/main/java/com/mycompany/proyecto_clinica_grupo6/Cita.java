@@ -79,4 +79,34 @@ class Cita {
     public void setServicio(String servicio) {
         this.servicio = servicio;
     }
+    
+    // Devuelve la duración de la cita.
+    public int getDuracion() {
+        return duracion;
+    }
+
+    // Permite cambiar la duración de la cita.
+    public void setDuracion(int duracion) {
+        this.duracion = duracion;
+    }
+
+    // Devuelve el costo de la cita.
+    public double getCosto() {
+        return costo;
+    }
+
+    // Permite cambiar el costo de la cita.
+    public void setCosto(double costo) {
+        this.costo = costo;
+    }
+
+    // Devuelve el médico que atenderá la cita.
+    public Medico getMedico() {
+        return medico;
+    }
+
+    // Permite cambiar el médico que atenderá la cita.
+    public void setMedico(Medico medico) {
+        this.medico = medico;
+    }
 }
