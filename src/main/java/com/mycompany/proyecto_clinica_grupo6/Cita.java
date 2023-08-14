@@ -24,8 +24,6 @@ class Cita {
         this.telefono = telefono;
         this.servicio = servicio;
         this.medico = medico;
-        // Una vez que creamos una cita, calculamos automáticamente su duración y costo.
-        calcularDuracionYCosto();
    }
     // Forma privada que dice la duración y costo de la cita basándose en el tipo de servicio.
     private void calcularDuracionYCosto() {
@@ -48,5 +46,67 @@ class Cita {
 
         // Se añade un impuesto del 13% al costo original.
         costo += costo * 0.13;
+    }
+    // Después, tenemos métodos que permiten obtener o cambiar los datos de una cita.
+    //Son como "ventanas" para ver o modificar la información.
+
+    // Devuelve el nombre del cliente de la cita.
+    public String getCliente() {
+        return cliente;
+    }
+
+    // Permite cambiar el nombre del cliente de la cita.
+    public void setCliente(String cliente) {
+        this.cliente = cliente;
+    }
+
+    // Devuelve el teléfono asociado a la cita.
+    public String getTelefono() {
+        return telefono;
+    }
+
+    // Permite cambiar el teléfono asociado a la cita.
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    // Devuelve el tipo de servicio de la cita.
+    public String getServicio() {
+        return servicio;
+    }
+
+    // Permite cambiar el tipo de servicio de la cita.
+    public void setServicio(String servicio) {
+        this.servicio = servicio;
+    }
+    
+    // Devuelve la duración de la cita.
+    public int getDuracion() {
+        return duracion;
+    }
+
+    // Permite cambiar la duración de la cita.
+    public void setDuracion(int duracion) {
+        this.duracion = duracion;
+    }
+
+    // Devuelve el costo de la cita.
+    public double getCosto() {
+        return costo;
+    }
+
+    // Permite cambiar el costo de la cita.
+    public void setCosto(double costo) {
+        this.costo = costo;
+    }
+
+    // Devuelve el médico que atenderá la cita.
+    public Medico getMedico() {
+        return medico;
+    }
+
+    // Permite cambiar el médico que atenderá la cita.
+    public void setMedico(Medico medico) {
+        this.medico = medico;
     }
 }
