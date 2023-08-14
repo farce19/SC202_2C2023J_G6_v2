@@ -6,7 +6,7 @@ package com.mycompany.proyecto_clinica_grupo6;
 
 /**
  *
- * @author fabar
+ * 
  */
 class Medico {
 
