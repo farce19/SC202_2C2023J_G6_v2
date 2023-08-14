@@ -24,6 +24,8 @@ class Cita {
         this.telefono = telefono;
         this.servicio = servicio;
         this.medico = medico;
+        // Una vez que creamos una cita, calculamos automáticamente su duración y costo.
+        calcularDuracionYCosto();
    }
     // Forma privada que dice la duración y costo de la cita basándose en el tipo de servicio.
     private void calcularDuracionYCosto() {
