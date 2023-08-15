@@ -15,5 +15,8 @@ class Medico {
     public int getHoraAlmuerzo() {
         return horaAlmuerzo;
     }
-    
+    // Método que permite cambiar la hora del almuerzo del médico.
+    public void setHoraAlmuerzo(int horaAlmuerzo) {
+        this.horaAlmuerzo = horaAlmuerzo;
+    }    
 }
