@@ -23,7 +23,23 @@ public class Clinica {
         JOptionPane.showMessageDialog(null, "Hora de almuerzo inválida.");
         return;
     }
+
+    // Ver si hay espacio en el arreglo de médicos para agregar uno nuevo
+    boolean registrado = false;
+    for (int i = 0; i < medicos.length; i++) {
+        if (medicos[i] == null) {
+            medicos[i] = new Medico(nombre, especialidad, horaAlmuerzo);
+            registrado = true;
+            JOptionPane.showMessageDialog(null, "Médico registrado con éxito.");
+            break;
+        }
     }
+    
+    // Si el arreglo de médicos está lleno, muestra un error
+    if (!registrado) {
+        JOptionPane.showMessageDialog(null, "No hay espacio para registrar más médicos.");
+    }
+}
     
     //---------------------------------------------------------------------------------------
     
