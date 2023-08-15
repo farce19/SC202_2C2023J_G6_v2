@@ -6,8 +6,17 @@ package com.mycompany.proyecto_clinica_grupo6;
 
 /**
  *
- * @author fabar
+ * 
  */
 class Medico {
-    
+
+
+    // Método que devuelve la hora del almuerzo del médico.
+    public int getHoraAlmuerzo() {
+        return horaAlmuerzo;
+    }
+    // Método que permite cambiar la hora del almuerzo del médico.
+    public void setHoraAlmuerzo(int horaAlmuerzo) {
+        this.horaAlmuerzo = horaAlmuerzo;
+    }   
 }
