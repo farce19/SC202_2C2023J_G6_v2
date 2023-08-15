@@ -8,15 +8,18 @@ package com.mycompany.proyecto_clinica_grupo6;
  *
  * 
  */
+// Esta es la clase que representa a un médico.
 class Medico {
 
+    // Datos del medico
+    private String nombre;
+    private String especialidad;
+    private int horaAlmuerzo;
 
-    // Método que devuelve la hora del almuerzo del médico.
-    public int getHoraAlmuerzo() {
-        return horaAlmuerzo;
-    }
-    // Método que permite cambiar la hora del almuerzo del médico.
-    public void setHoraAlmuerzo(int horaAlmuerzo) {
+    // Contructor para crear un nuevo medico y sus datos
+    public Medico(String nombre, String especialidad, int horaAlmuerzo) {
+        this.nombre = nombre;
+        this.especialidad = especialidad;
         this.horaAlmuerzo = horaAlmuerzo;
     }   
 }
