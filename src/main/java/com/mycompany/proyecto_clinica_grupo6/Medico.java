@@ -15,8 +15,12 @@ class Medico {
     public int getHoraAlmuerzo() {
         return horaAlmuerzo;
     }
+    
     // Método que permite cambiar la hora del almuerzo del médico.
     public void setHoraAlmuerzo(int horaAlmuerzo) {
         this.horaAlmuerzo = horaAlmuerzo;
-    }    
+    }
+    
+    //El método lo que hace es sobreescribir un metodo sobre otro, es decir, prevenir errores a la hora de ejecutar 
+    @Override    
 }
