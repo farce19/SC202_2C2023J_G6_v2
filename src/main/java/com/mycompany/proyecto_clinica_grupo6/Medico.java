@@ -22,5 +22,14 @@ class Medico {
     }
     
     //El método lo que hace es sobreescribir un metodo sobre otro, es decir, prevenir errores a la hora de ejecutar 
-    @Override    
+    @Override
+
+    // Este método devuelve una representación en cadena de texto del médico.
+    public String toString() {
+        return "Medico{" +
+                "nombre='" + nombre + '\'' +
+                ", especialidad='" + especialidad + '\'' +
+                ", horaAlmuerzo=" + horaAlmuerzo +
+                '}';
+    }    
 }
