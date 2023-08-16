@@ -21,5 +21,30 @@ class Medico {
         this.nombre = nombre;
         this.especialidad = especialidad;
         this.horaAlmuerzo = horaAlmuerzo;
-    }   
+    }
+    
+    //========================================================================================================================================
+
+
+    // Método que devuelve la hora del almuerzo del médico.
+    public int getHoraAlmuerzo() {
+        return horaAlmuerzo;
+    }
+    
+    // Método que permite cambiar la hora del almuerzo del médico.
+    public void setHoraAlmuerzo(int horaAlmuerzo) {
+        this.horaAlmuerzo = horaAlmuerzo;
+    }
+    
+    //El método lo que hace es sobreescribir un metodo sobre otro, es decir, prevenir errores a la hora de ejecutar 
+    @Override
+
+    // Este método devuelve una representación en cadena de texto del médico.
+    public String toString() {
+        return "Medico{" +
+                "nombre='" + nombre + '\'' +
+                ", especialidad='" + especialidad + '\'' +
+                ", horaAlmuerzo=" + horaAlmuerzo +
+                '}';
+    }    
 }

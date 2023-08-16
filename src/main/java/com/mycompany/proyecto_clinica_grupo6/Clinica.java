@@ -39,7 +39,27 @@ public class Clinica {
     if (!registrado) {
         JOptionPane.showMessageDialog(null, "No hay espacio para registrar más médicos.");
     }
+    
+    
 }
+    
+     // Método para agendar una cita en la clínica
+    public void agendarCita() {
+    // solicitar informacionde la cita
+    String cliente = JOptionPane.showInputDialog("Ingrese el nombre del cliente:");
+    String telefono = JOptionPane.showInputDialog("Ingrese el teléfono del cliente:");
+    String servicio = JOptionPane.showInputDialog("Ingrese el servicio (Medicina General, Cirugía Ambulatoria, Cirugía Especializada):");
+
+    // seleccionar hora y medico
+    int indexMedico = Integer.parseInt(JOptionPane.showInputDialog("Seleccione un médico (0-4):"));
+    int hora = Integer.parseInt(JOptionPane.showInputDialog("Seleccione una hora (8-17, formato 24 horas):")) - 8;
+
+    // Verificación de validez del médico y hora
+    if (indexMedico < 0 || indexMedico >= medicos.length || hora < 0 || hora >= 10) {
+        JOptionPane.showMessageDialog(null, "Datos inválidos.");
+        return;
+    }
+    }
     
     //---------------------------------------------------------------------------------------
     
