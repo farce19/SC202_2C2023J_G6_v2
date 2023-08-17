@@ -1,9 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.proyecto_clinica_grupo6;
 
+
+// Esta es la clase que representa a un médico.
 
 class Medico {
     // Estos son los datos que caracterizan a un médico: nombre, especialidad y hora de almuerzo.
@@ -11,7 +10,8 @@ class Medico {
     private String especialidad;
     private int horaAlmuerzo;
 
-    // Este es el constructor de la clase, que permite crear un nuevo médico con sus datos.
+    // Contructor para crear un nuevo medico y sus datos
+
     public Medico(String nombre, String especialidad, int horaAlmuerzo) {
         this.nombre = nombre;
         this.especialidad = especialidad;
