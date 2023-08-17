@@ -4,6 +4,8 @@ package com.mycompany.proyecto_clinica_grupo6;
 
 // Esta es la clase que representa a un médico.
 
+// Esta es la clase que representa a un médico.
+
 class Medico {
     // Estos son los datos que caracterizan a un médico: nombre, especialidad y hora de almuerzo.
     private String nombre;
@@ -41,52 +43,6 @@ class Medico {
     }
     
     
-<<<<<<< HEAD
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    //========================================================================================================================================
-
-
-=======
->>>>>>> 26bb8b1f641f148ca5505203988ac45f01fa6442
     // Método que devuelve la hora del almuerzo del médico.
     public int getHoraAlmuerzo() {
         return horaAlmuerzo;
