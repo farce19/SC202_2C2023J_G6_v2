@@ -15,7 +15,7 @@ public class Clinica {
     public void registrarMedico() {
     // Sulicitud de datos del medico
     String nombre = JOptionPane.showInputDialog("Ingrese el nombre del médico:");
-    String especialidad = JOptionPane.showInputDialog("Ingrese la especialidad del médico:");
+    String especialidad = JOptionPane.showInputDialog("Ingrese la especialidad del médico (Medicina General, Cirugía Ambulatoria, Cirugía Especializada):");
     int horaAlmuerzo = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la hora de almuerzo del médico (8-17, formato 24 horas):"));
 
     // Verificación de validez de hora de almuerzo
@@ -59,6 +59,7 @@ public class Clinica {
         JOptionPane.showMessageDialog(null, "Datos inválidos.");
         return;
     }
+    
     // revisar la hora solicitada está disponible
     if (agenda[indexMedico][hora] == null) {
         agenda[indexMedico][hora] = new Cita(cliente, telefono, servicio, medicos[indexMedico]);
