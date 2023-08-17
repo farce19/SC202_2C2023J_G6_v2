@@ -49,13 +49,32 @@ public class Clinica {
     }
 }
     
-    /*
-    *
-    * En este espacio se desarrollara la partede consulta de agenda
-    * Encargado Marco
-    *
-    */
+    public void revisarAgenda() {
+    int indexMedico = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el médico (0-4):"));
     
+    // Verificación de validez de índice del médico
+    if (indexMedico < 0 || indexMedico >= medicos.length) {
+        JOptionPane.showMessageDialog(null, "Datos inválidos.");
+        return;
+    }
+
+    StringBuilder agendaStr = new StringBuilder();
+
+    // Recorre la agenda y muestra las citas programadas, incluyendo la hora de almuerzo
+    for (int hora = 0; hora < 10; hora++) {
+        if (medicos[indexMedico].getHoraAlmuerzo() == hora + 8) {
+            agendaStr.append((hora + 8) + ":00 HORA DE ALMUERZO\n");
+        } else if (agenda[indexMedico][hora] == null) {
+            agendaStr.append((hora + 8) + ":00 --VACIO--\n");
+        } else {
+            Cita cita = agenda[indexMedico][hora];
+            agendaStr.append((hora + 8) + ":00 " + cita.getCliente() + " - " + cita.getTelefono() + "\n");
+        }
+    }
+
+    // Muestra la agenda completa del médico seleccionado
+    JOptionPane.showMessageDialog(null, agendaStr.toString());
+    }
 
     public static void main(String[] args) {
         
@@ -69,16 +88,16 @@ public class Clinica {
                 //Se llaman funciones de la clase cita, solo se debe esperar a que se carguen a la main por el encargado
                 switch (option) {
                     case "1":
-                       Clinica.RegistrarMedico();
+                       Clinica.registrarMedico();
                        break;
                     case "2":
                         Clinica.AgendarCita();
                         break;
                     case "3":
-                        Clinica.CancelarCita();
+                        Clinica.cancelarCita();
                        break;
                    case "4":
-                        Clinica.RevisarAgenda();
+                        Clinica.revisarAgenda();
                         break;
                    case "5":
                        continuar = false;
