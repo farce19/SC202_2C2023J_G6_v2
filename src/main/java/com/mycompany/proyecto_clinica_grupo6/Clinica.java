@@ -59,6 +59,14 @@ public class Clinica {
         JOptionPane.showMessageDialog(null, "Datos inválidos.");
         return;
     }
+    // revisar la hora solicitada está disponible
+    if (agenda[indexMedico][hora] == null) {
+        agenda[indexMedico][hora] = new Cita(cliente, telefono, servicio, medicos[indexMedico]);
+        JOptionPane.showMessageDialog(null, "Cita agendada con éxito.");
+    } else {
+        // Si la hora ya está ocupada, muestra un mensaje de error
+        JOptionPane.showMessageDialog(null, "Hora ya ocupada.");
+    }
     }
     
     //---------------------------------------------------------------------------------------
