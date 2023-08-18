@@ -14,7 +14,7 @@ public class Clinica {
     // Método para registrar un nuevo médico en la clínica
     public void registrarMedico() {
     // Sulicitud de datos del medico
-    String nombre = JOptionPane.showInputDialog("Ingrese el nombre del médico:");
+    String nombre = JOptionPane.showInputDialog("Ingrese el médico iniciando en 0 sucesivamente(0-4):");
     String especialidad = JOptionPane.showInputDialog("Ingrese la especialidad del médico (Medicina General, Cirugía Ambulatoria, Cirugía Especializada):");
     int horaAlmuerzo = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la hora de almuerzo del médico (8-17, formato 24 horas):"));
 
